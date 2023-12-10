@@ -2,6 +2,7 @@
   font-size 16rem
 }
 
+
 .setting-title {
   margin 40rem 0 25rem 0
   font-weight bold
@@ -12,12 +13,17 @@
   }
 }
 
+
 .setting-list {
   margin 0
   padding 0
 
   .setting-item {
     margin-bottom 10rem
+
+    &:last-child {
+      margin-bottom 0
+    }
 
     &.has-desc {
       display flex
@@ -42,15 +48,11 @@
     }
 
 
-    &.last-child {
-      margin-bottom 0
-    }
-
-
     .prefix-input {
       width calc(100% - 56rem)
       margin-left 56rem
     }
+
 
     :deep() .el-switch {
       user-select none
